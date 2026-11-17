@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     ARYAMAN SOBTI — PORTFOLIO
+     Structure:
+       1. Head (meta, fonts, stylesheet)
+       2. Navigation
+       3. About (photo + intro)
+       4. Hero (headline + details)
+       5. Projects ("coming soon" message)
+       6. Movies / Short Films
+       7. Design (images, galleries and YouTube links)
+       8. Education
+       9. Footer / Contact
+      10. Gallery pop-up (filled by script.js)
+      11. Script
+     ============================================================ -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Aryaman Sobti — Designer &amp; Filmmaker</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== 2. NAVIGATION ==================== -->
+  <nav>
+    <a class="mark" href="#top" aria-label="Home">Aryaman Sobti</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#films">Films</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="top">
+
+    <!-- ==================== 3. ABOUT ==================== -->
+    <section id="about" class="about-top">
+      <div class="wrap">
+        <div class="about">
+
+          <label class="photo has" id="photo">
+            <img id="pimg" src="./Images/Profile Pic.png" alt="Portrait of Aryaman Sobti">
+          </label>
+
+          <!-- Intro text -->
+          <div>
+            <p class="big">I’m Aryaman Sobti. I design and film stories that are built to be felt.</p>
+            <p class="lead">I work between the camera and the screen. Shooting and editing short films, designing posters, print and magazines, and also creating stunning 3D visuals in Blender.</p>
+
+            <div class="cols">
+              <div>
+                <h4>Filmmaking</h4>
+                <ul>
+                  <li>Cinematography</li>
+                  <li>Editing</li>
+                  <li>Direction</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Design</h4>
+                <ul>
+                  <li>Posters, print and magazines</li>
+                  <li>Blender 3D visualisation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. HERO ==================== -->
+    <div class="wrap hero">
+      <div class="orbit" aria-hidden="true"></div>
+
+      <h1 aria-label="Design and film, made to be felt.">
+        <span><i>Design &amp; film,</i></span>
+        <span><i>made to be felt.</i></span>
+      </h1>
+
+      <div class="meta">
+        <p>Aryaman Sobti</p>
+        <p>Designer and Filmmaker working across film Cinematography, Direction, Case-Studies, posters and interactive web.</p>
+        <p>Based in Delhi, India. Available for Projects from January ’27.</p>
+        <p>Scroll to see selected work.</p>
+      </div>
+    </div>
+
+    <!-- ==================== 5. PROJECTS ==================== -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="head">
+          <h2>Projects</h2>
+          <span>Case studies</span>
+        </div>
+
+        <div class="soon">
+          <p>Projects coming soon</p>
+          <small>Detailed case studies will be added here.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. MOVIES / SHORT FILMS ==================== -->
+    <section id="films">
+      <div class="wrap">
+        <div class="head">
+          <h2>Movies / Short Films</h2>
+          <span>Editing and cinematography</span>
+        </div>
+
+        <div class="work">
+          <div class="static">
+            <div class="art"><div class="in tc"><b>Untied</b><small>A Pratibimb Films Production</small></div></div>
+            <h3>Untied (A Pratibimb Films Production)</h3>
+            <div class="sub"><span>Editing · 2025</span><span>Link coming soon</span></div>
+          </div>
+
+          <div class="static">
+            <div class="art"><div class="in tc"><b>The Red Bow</b></div></div>
+            <h3>The Red Bow</h3>
+            <div class="sub"><span>Editing · 2025</span><span>Link coming soon</span></div>
+          </div>
+
+          <div class="static">
+            <div class="art"><div class="in tc"><b>Almost Home</b></div></div>
+            <h3>Almost Home</h3>
+            <div class="sub"><span>Cinematography and Editing · 2026</span><span>Link coming soon</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. DESIGN ==================== -->
+    <section id="design">
+      <div class="wrap">
+        <div class="head">
+          <h2>Design</h2>
+          <span>Print, poster and Blender work</span>
+        </div>
+
+        <div class="work">
+          <div class="static">
+            <div class="art"><div class="in tc paper"><b>Australia<br>Tour Guide</b><small>Magazine design</small></div></div>
+            <h3>Australia Tour Guide Magazine Design</h3>
+            <div class="sub"><span>Magazine design</span><span>PDF coming soon</span></div>
+          </div>
+
+          <button class="gcard" data-title="Christmas Greeting Card Design" data-kind="Print design" aria-label="Open Christmas Greeting Card Design">
+            <div class="art"><div class="in"><img src="./Images/Christmas Greeting Card new.png" alt="Preview of the project" loading="lazy"></div><span class="tag">View gallery</span></div>
+            <h3>Christmas Greeting Card Design</h3>
+            <div class="sub"><span>Print design</span><span>View gallery</span></div>
+          </button>
+
+          <button class="gcard" data-title="Knives Out Movie Poster Design" data-kind="Poster design" aria-label="Open Knives Out Movie Poster Design">
+            <div class="art"><div class="in"><img class="top" src="./Images/Knives Out Poster Design.png" alt="Preview of the project" loading="lazy"></div><span class="tag">View poster</span></div>
+            <h3>Knives Out Movie Poster Design</h3>
+            <div class="sub"><span>Poster design</span><span>View poster</span></div>
+          </button>
+
+          <a href="https://www.youtube.com/watch?v=69gOkpdnj_c" target="_blank" rel="noopener">
+            <div class="art"><div class="in tc warm"><b>Backrooms</b><small>Blender animation</small></div><span class="tag">Watch on YouTube</span></div>
+            <h3>Blender Backrooms Animation</h3>
+            <div class="sub"><span>Blender animation</span><span>Watch on YouTube</span></div>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=rYTGs2VIzsA" target="_blank" rel="noopener">
+            <div class="art"><div class="in tc teal"><b>Uncharted 3</b><small>Scene recreation</small></div><span class="tag">Watch on YouTube</span></div>
+            <h3>UNCHARTED 3 Scene Recreation in Blender</h3>
+            <div class="sub"><span>Blender scene recreation</span><span>Watch on YouTube</span></div>
+          </a>
+
+          <button class="gcard" data-title="Ray-Ban Wayfarer Glasses 3D Visualisation in Blender" data-kind="Blender 3D visualisation" aria-label="Open Ray-Ban Wayfarer Glasses 3D Visualisation in Blender">
+            <div class="art"><div class="in"><img src="./Images/RAYBANFINAL.png" alt="Preview of the project" loading="lazy"></div><span class="tag">View gallery</span></div>
+            <h3>Ray-Ban Wayfarer Glasses 3D Visualisation in Blender</h3>
+            <div class="sub"><span>Blender 3D visualisation</span><span>View gallery</span></div>
+          </button>
+
+          <button class="gcard" data-title="Magnemite Pokémon Visualisation in Blender" data-kind="Blender 3D visualisation" aria-label="Open Magnemite Pokémon Visualisation in Blender">
+            <div class="art"><div class="in"><img src="./Images/Magnemite1.png" alt="Preview of the project" loading="lazy"></div><span class="tag">View gallery</span></div>
+            <h3>Magnemite Pokémon Visualisation in Blender</h3>
+            <div class="sub"><span>Blender 3D visualisation</span><span>View gallery</span></div>
+          </button>
+
+          <button class="gcard" data-title="Shinchan Character – Buri Buri Zaemon 2.5D Blender Visualisation" data-kind="Blender 2.5D visualisation" aria-label="Open Shinchan Character – Buri Buri Zaemon 2.5D Blender Visualisation">
+            <div class="art"><div class="in"><img src="./Images/BuriBuriZaemonFinallyFights.png" alt="Preview of the project" loading="lazy"></div><span class="tag">View image</span></div>
+            <h3>Shinchan Character – Buri Buri Zaemon 2.5D Blender Visualisation</h3>
+            <div class="sub"><span>Blender 2.5D visualisation</span><span>View image</span></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. EDUCATION ==================== -->
+    <section id="education">
+      <div class="wrap">
+        <div class="head">
+          <h2>Education</h2>
+          <span>Studies and training</span>
+        </div>
+
+        <div class="arch">
+          <a href="#education"><span>2025–2029</span><strong>Bachelor’s degree in Design</strong><span>Delhi Tecnological University, Delhi-110085</span></a>
+          <a href="#education"><span>2025</span><strong>Senior secondary</strong><span>Sachdeva Public School Sector-13, Rohini, Delhi-110085</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 9. FOOTER / CONTACT ==================== -->
+  <footer id="contact">
+    <div class="wrap">
+      <a class="mail" href="mailto:aryamansobti@yahoo.com">aryamansobti@yahoo.com</a>
+
+      <div class="row">
+        <span>© 2026 Aryaman Sobti</span>
+        <nav aria-label="Social">
+          <a href="https://www.instagram.com/arya_man208/?utm_source=ig_web_button_share_sheet">Instagram</a>
+          <a href="https://github.com/AryamanSobti">GitHub</a>
+          <a href="https://www.linkedin.com/in/aryaman-sobti-229219381/">LinkedIn</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
